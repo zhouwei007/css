@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .wrapper {
+            width: 100%;
+            margin-bottom: 30px;
+            border:2px solid red;
+            box-sizing: border-box;
+            font-size: 0;
+        }
+        .wrapper .left {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            background: #faa;
+            vertical-align:top; /*改变对齐位置*/
+        }
+        .wrapper .right {
+            display: inline-block;
+            width: 200px;
+            height: 500px;
+            background: #afa;
+        }
+        .wrapper .content {
+            width: calc(100% - 400px);
+            display: inline-block;
+            height: 400px;
+            background-color: #aaf;
+        }
+    </style>
+
+</head>
+<body>
+<!-- 三栏-浮动布局 -->
+<div class="wrapper">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="content"></div>
+</div>
+</body>
+</html>

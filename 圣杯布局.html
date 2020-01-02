@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+    <style>
+        .container {
+            position: relative;;
+            height: 300px;
+            background: #ddd;
+            padding: 0 300px 0;
+        }
+        .container .middle{
+            float: left;
+            width: 100%;
+            height: 300px;
+        }
+        .container .left{
+            float: left;
+            position: relative;
+            height: 300px;
+            width: 300px;
+            margin-left: -100%;
+            left: -300px;
+        }
+        .container .right {
+            float: left;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-left: -300px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+<!-- 圣杯布局 -->
+<div class="container">
+    <div class="middle">中间</div>
+    <div class="left">左边</div>
+    <div class="right">右边</div>
+</div>
+</body>
+<script>
+    /*
+    * 1.middle写在前面，网页加载优先加载
+    * 2.通过给 container 左右固定的padding来预留出left和right的空间*/
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单列布局</title>
+</head>
+<body>
+<div class="container">
+    <header>头部</header>
+    <div class="content">1.普通布局（头部、内容、底部）</div>
+    <footer>底部</footer>
+</div>
+</body>
+<style>
+    .container{
+        width: 80%;
+        margin: 30px auto;
+        border: 2px solid red;
+        box-sizing: border-box;
+    }
+    .container header{
+        width: 100%;
+        height: 30px;
+        background: #faa;
+    }
+    .container .content{
+        width: 100%;
+        height: 300px;
+        background: #aaf;
+    }
+    .container footer{
+        width: 100%;
+        height: 30px;
+        background: #afa;
+    }
+</style>
+</html>
